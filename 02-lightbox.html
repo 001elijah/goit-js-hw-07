@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SimpleLightbox library</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/simple-lightbox.jquery.min.js"></script>
+    <link rel="stylesheet" href="css/simple-lightbox.min.css"/>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -12,8 +15,12 @@
     <p><a href="index.html">Go back</a></p>
 
     <!-- Add gallery items to this list -->
-    <ul class="gallery"></ul>
-
+    <div class="gallery"></div>
+    <!-- <div class="gallery">
+      <a href="https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg" data-lightbox="lbox"><img src="https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg" alt="" title=""/></a>
+      <a href="https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg" data-lightbox="lbox"><img src="https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg" alt="" title="Beautiful Image"/></a>
+    </div> -->
     <script src="js/02-lightbox.js" type="module"></script>
+    <!-- <script>$('.gallery a').simpleLightbox({ /* options */ });</script> -->
   </body>
 </html>
