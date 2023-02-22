@@ -13,7 +13,8 @@ function createGalleryItems(itemsArr) {
             class="gallery__image"
             src="${obj.preview}"
             data-source="${obj.original}"
-            alt="${obj.description}"
+            alt=""
+            title="${obj.description}"
           />
         </a>`
     });
@@ -27,4 +28,4 @@ createGalleryItems(galleryItems);
 
 divElement.addEventListener('click', selectImage);
 
-$('.gallery a').simpleLightbox({ /* options */ });
+$('.gallery a').simpleLightbox({ captionDelay: 250 });
