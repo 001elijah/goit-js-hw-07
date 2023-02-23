@@ -28,4 +28,5 @@ createGalleryItems(galleryItems);
 
 divElement.addEventListener('click', selectImage);
 
-$('.gallery a').simpleLightbox({ captionDelay: 250 });
+// $('.gallery a').simpleLightbox({ captionDelay: 250 });
+var lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });

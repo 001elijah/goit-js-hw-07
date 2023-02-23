@@ -22,7 +22,7 @@ function createGalleryItems(itemsArr) {
 
 function selectImage(evt) {
     evt.preventDefault();
-    if (evt.target.parentNode !== document.body) {
+    if (evt.target.nodeName === 'IMG') {
         basicLightbox.create(`
 		    <img width="1400" height="900" src="${evt.target.dataset.source}">
 	    `).show()
